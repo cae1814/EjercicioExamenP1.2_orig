@@ -27,164 +27,20 @@
     </div>
   </section>
 
-  <!-- Calculo de area -->
-  <section class="container mt-2">
-    <div class="card">
-      <div class="card-header" style="background-color: gray; color: white;">
-        Ejercicio #1
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">Calculo área de un reactángulo</h5>
-        <div class="row g-3 align-items-center row">
-          <div class="col-auto">
-            <label class="col-form-label">Base</label>
-          </div>
-          <div class="col-auto">
-            <input type="number" id="eje1InputBase" class="form-control text-end"
-              aria-describedby="inputBaseHelpInline">
-            <span id="error-eje1InputBase" class="error" hidden>Debe de ingresar un numero válido</span>
-          </div>
-          <div class="col-auto">
-            <label class="col-form-label">Altura</label>
-          </div>
-          <div class="col-auto">
-            <input required type="number" id="eje1InputAltura" class="form-control text-end"
-              aria-describedby="inputAlturaHelpInline">
-            <span id="error-eje1InputAltura" class="error" hidden>Debe de ingresar un numero válido</span>
-          </div>
-          <div class="col-auto">
-            <label class="col-form-label">Área</label>
-          </div>
-          <div class="col-auto">
-            <input required readonly type="text" id="eje1InputArea" class="form-control text-end"
-              aria-describedby="inputAreaHelpInline">
-          </div>
-        </div>
-        <p class="card-text"></p>
-        <a class="btn btn-secondary btn-sm" id="eje1_btonLimpiar">Limpiar</a>
-        <a class="btn btn-primary btn-sm" id="eje1_btonCalcular">Calcular</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Ejercicio Fetch 1 -->
-  <section class="container mt-2 ">
-    <div class="card">
-      <div class="card-header" style="background-color: gray; color: white;">
-        Ejercicio Fetch 1
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">Listado de Usuarios</h5>
-        <div class="row g-3 align-items-center row collapse multi-collapse" id="divuserstable">
-          <table class="table table-striped table-hover font-family" id="userstable">
-          </table>
-        </div>
-        <p class="card-text"></p>
-        <button class="btn btn-success btn-sm" id="ejeFetch1_btonCargar">Actualizar</button>
-        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#divuserstable"
-          aria-expanded="false" aria-controls="divuserstable">&nbsp;&nbsp;Mostrar&nbsp;&nbsp;</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- Modal -->
-  <div class="modal fade" id="ejercicioFetch1ModalImg" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-sm">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title" id="staticBackdropLabel" style="font-size: 16px;"></h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="text-center">
-            <img src="" id="imgModal" width="230px" class="rounded" alt="...">
-            <h1 id="staticBackdropFooter" style="font-size: 11px;"></h1>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Cerrar</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Calculo de notas -->
-  <section class="container mt-2 mb-3">
-    <div class="card">
-      <div class="card-header" style="background-color: gray; color: white;">
-        Ejercicio #2
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">Registro de notas</h5>
-        <div class="row g-3 align-items-center">
-          <form>
-            <div class="row col-lg-12 col-md-12 col-sm-12">
-              <div class="col-lg-3 col-md-3 col-sm-3">
-                <div class="mb-1">
-                  <input type="number" class="form-control text-right" id="eje3Nota1" max="30" min="0" value="0"
-                    aria-describedby="eje3Nota1Help" placeholder="Ingrese Nota 1">
-                  <div id="eje3Nota1Help" class="form-text">Nota del primer periodo</div>
-                  <span id="error-eje3Nota1HelpMsg" class="error" hidden>La nota m&aacute;xima v&aacute;lida es
-                    30</span>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-3 col-sm-3">
-                <div class="mb-1">
-                  <input type="number" class="form-control text-right" id="eje3Nota2" max="30" min="0" value="0"
-                    aria-describedby="eje3Nota2Help" placeholder="Ingrese Nota 2">
-                  <div id="eje3Nota2Help" class="form-text">Nota del segundo periodo</div>
-                  <span id="error-eje3Nota2HelpMsg" class="error" hidden>La nota m&aacute;xima v&aacute;lida es
-                    30</span>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-3 col-sm-3">
-                <div class="mb-1">
-                  <input type="number" class="form-control text-right" id="eje3Nota3" max="40" min="0" value="0"
-                    aria-describedby="eje3Nota3Help" placeholder="Ingrese Nota 3">
-                  <div id="eje3Nota3Help" class="form-text">Nota del tercer periodo</div>
-                  <span id="error-eje3Nota3HelpMsg" class="error" hidden>La nota m&aacute;xima v&aacute;lida es
-                    40</span>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-3 col-sm-3">
-                <div class="mb-1">
-                  <input disabled type="text" class="form-control text-left" id="eje3NotaFinal" value="0"
-                    aria-describedby="eje3NotaFinalHelp">
-                  <div id="eje3NotaFinalHelp" class="form-text">Notal Final</div>
-                  <span id="error-eje3Nota3HelpMsg" class="error" hidden>La nota final supera el valor m&aacute;ximo de
-                    100</span>
-                </div>
-              </div>
-            </div>
-            <p class="card-text"></p>
-            <a class="btn btn-secondary btn-sm" id="eje3_btonLimpiar">Limpiar</a>
-            <a class="btn btn-primary btn-sm" id="eje3_btonCalcular">Calcular</a>
-          </form>
-        </div>
-      </div>
-    </div>
-    <p class="card-text"></p>
-    </div>
-    </div>
-  </section>
-
   <!-- Ejercicio Fetch 2 -->
   <section class="container mt-2 ">
     <div class="card">
       <div class="card-header" style="background-color: green; color: white;">
-        Ejercicio Fetch 2
+        EjercicioExamenP1.2 | Listado de Productos
       </div>
       <div class="card-body">
-        <h5 class="card-title">Artículos de Tiendas</h5>
-        <div class="row g-3 align-items-center row collapse multi-collapse" id="divarticulos">
+        <h5 class="card-title">Listado de Productos</h5>
+        <div class="row g-3 align-items-center row collapse2 multi-collapse2" id="divproductos">
           <table class="table table-striped table-hover font-family" id="articulos">
           </table>
         </div>
         <p class="card-text"></p>
         <button class="btn btn-success btn-sm" id="ejeFetch2_btonCargar">Actualizar</button>
-        <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#divarticulos"
-          aria-expanded="false" aria-controls="divarticulos">&nbsp;&nbsp;Mostrar&nbsp;&nbsp;</button>
       </div>
     </div>
   </section>
@@ -195,7 +51,7 @@
     <div class="modal-dialog modal-sm">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title" id="staticBackdropCardLabel" style="font-size: 16px;">Detalles del Usuario</h1>
+          <h1 class="modal-title" id="staticBackdropCardLabel" style="font-size: 16px;">Detalles del Producto</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -203,16 +59,16 @@
             <img src="..." class="card-img-top" alt="..." onerror="this.onerror=null; this.src='assets/img/objeto.webp'" id="imgCardModal">
             <div class="card-body">
               <div class="mb-1">
-                <label for="formGroupExampleInput" class="form-label font-family">Name</label>
-                <input disabled type="text" class="form-control font-family" id="eje4CardFetch2Nombre">
+                <label for="formGroupExampleInput" class="form-label font-family">Title</label>
+                <input disabled type="text" class="form-control font-family" id="eje4CardFetch2Title">
               </div>
               <div class="mb-1">
-                <label for="formGroupExampleInput2" class="form-label font-family">Creation Date</label>
-                <input disabled type="text" class="form-control font-family" id="eje4CardFetch2CreationDate">
+                <label for="formGroupExampleInput2" class="form-label font-family">Price</label>
+                <input disabled type="text" class="form-control font-family" id="eje4CardFetch2Price">
               </div>
               <div class="mb-1">
-                <label for="formGroupExampleInput2" class="form-label font-family">Update Date</label>
-                <input disabled type="text" class="form-control font-family" id="eje4CardFetch2UpdateDate">
+                <label for="formGroupExampleInput2" class="form-label font-family">Category</label>
+                <input disabled type="text" class="form-control font-family" id="eje4CardFetch2Category">
               </div>
             </div>
           </div>

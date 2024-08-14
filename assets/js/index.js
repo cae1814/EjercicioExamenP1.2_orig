@@ -90,7 +90,7 @@ function showAlert(msg){
 function loadTableFetch(){
     let i = 0; 
     fetch("https://fakestoreapi.com/products").then(response => response.json()).then(data => {
-        let tabla = '<tr><th>Id</th><th></th><th>Title</th><th>Price</th><th>Description</th><th>Category</th><th>Category</th><th></th></tr>';
+        let tabla = '<tr><th>Id</th><th></th><th>Title</th><th>Price</th><th>Description</th><th>Category</th><th></th></tr>';
 
         for (let art of data) {
             i++;
@@ -99,7 +99,7 @@ function loadTableFetch(){
                           <td><div class="text-center"><img id="img${art.id}" src="${art.image}" width="40px" class="rounded" alt="..." onerror="this.onerror=null; this.src='../assets/img/objeto.webp'" onclick='loadTableFetchVerModalCard(${art.id}, "${art.title}", ${art.price}, "${art.description}", "${art.category}")' style="cursor:pointer;"></div></td>
                           <td>${art.title}</td>                     
                           <td>${art.price}</td> 
-                          <td>${art.description}</td>
+                          <td class="font-size-10">${art.description}</td>
                           <td>${art.category}</td>
                           <td><button type="button" class="btn btn-primary btn-sm" onclick='loadTableFetchVerModalCard(${art.id}, "${art.title}", "${art.price}", "${art.description}", "${art.category}")'>Detalles</button></td>
                      </tr>`

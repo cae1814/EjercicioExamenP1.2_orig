@@ -96,12 +96,12 @@ function loadTableFetch(){
             i++;
             tabla += `<tr>
                           <td scope='row'>${art.id}</td>
-                          <td><div class="text-center"><img id="img${art.id}" src="${art.image}" width="40px" class="rounded" alt="..." onerror="this.onerror=null; this.src='../assets/img/objeto.webp'" onclick='loadTableFetchVerModalCard(${art.id}, "${art.title}", ${art.price}, "${art.description}", "${art.category}")' style="cursor:pointer;"></div></td>
+                          <td><div class="text-center"><img id="img${art.id}" src="${art.image}" width="40px" class="rounded" alt="..." onerror="this.onerror=null; this.src='../assets/img/objeto.webp'" onclick='loadTableFetchVerModalCard(${art.id}, "${art.title}", ${art.price}, "${art.category}")' style="cursor:pointer;"></div></td>
                           <td>${art.title}</td>                     
                           <td>${art.price}</td> 
                           <td class="font-size-10">${art.description}</td>
                           <td>${art.category}</td>
-                          <td><button type="button" class="btn btn-primary btn-sm" onclick='loadTableFetchVerModalCard(${art.id}, "${art.title}", "${art.price}", "${art.description}", "${art.category}")'>Detalles</button></td>
+                          <td><button type="button" class="btn btn-primary btn-sm" onclick='loadTableFetchVerModalCard(${art.id}, "${art.title}", "${art.price}", "${art.category}")'>Detalles</button></td>
                      </tr>`
         }
 
@@ -109,7 +109,7 @@ function loadTableFetch(){
     });
 }
 
-function loadTableFetchVerModalCard(id, title, price, description, category){
+function loadTableFetchVerModalCard(id, title, price, category){
     //alert("QUEE");
     document.getElementById("imgCardModal").src = document.getElementById("img"+id).src;
     document.getElementById("eje4CardFetch2Title").value = title;
